@@ -86,6 +86,7 @@ window.onload = () => {
     return excusa;
   };
 
-  document.write(getExcuse());
+  document.getElementById("excuse").innerHTML = getExcuse();
+  //document.write(getExcuse());
   //console.log(getExcuse());
 };
