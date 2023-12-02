@@ -24,7 +24,7 @@ window.onload = () => {
     "escoba",
     "estropajo",
     "elfo doméstico",
-    "gamusino"
+    "gamusino",
   ];
   const verbo = [
     "comido",
@@ -47,7 +47,7 @@ window.onload = () => {
     "cantado",
     "saltado",
     "escalado",
-    "volado"
+    "volado",
   ];
   const atributo = [
     "el café",
@@ -66,10 +66,11 @@ window.onload = () => {
     "la varita",
     "sus sentimientos",
     "a un dinosaurio",
-    "un calcetín"
+    "un calcetín",
   ];
 
-  const whoDidWhat = a => a[Math.round(Math.random() * (a.length - 1))];
+  const whoDidWhat = (arrayExcuse) =>
+    arrayExcuse[Math.round(Math.random() * (arrayExcuse.length - 1))];
   let excusa;
   const getExcuse = function() {
     const who = whoDidWhat(sujeto);
